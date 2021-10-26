@@ -32,10 +32,10 @@ body
     background: $color-white;
     color: $color-gray-dark-1;
 
-    & > *{padding: 0 7rem;}
+    & > *{margin: 0 7rem;}
     & > *
     {
-        @include respond(tab-port){padding: 0 5rem ;}
+        @include respond(tab-port){margin: 0 5rem ;}
     }
 }
 

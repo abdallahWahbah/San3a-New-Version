@@ -1,13 +1,10 @@
-// body
-// {
-//     height: 200vh;
-//     background: red !important;
-// }
 .nav
 {
-    height: 10rem;
+    height: 8rem;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
-    padding: 0; // cause i made every child with padding in the body tag
+    margin: 0; // cause i made every child with padding in the body tag
+    background: $color-white;
+    z-index: 999999999999999;
     
     &__container
     {
@@ -18,6 +15,15 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    &.fixed
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        animation: moveDown 1s ease-in-out;
+    }
+    &.fixed + .header{margin-top: 15rem;}
 
     // LOGO
     &__logo
@@ -48,7 +54,7 @@
         @include respond(phone)
         {
             position: absolute;
-            top: 10rem;
+            top: 9rem;
             left: 0;
             display: block;
             background: $color-white;
@@ -142,7 +148,7 @@
 
         &.active
         {
-            top: 11rem;
+            top: 9rem;
         }
     }
     &__input
@@ -171,7 +177,7 @@
     &__cart
     {
         position: absolute;
-        top: 11rem;
+        top: 9rem;
         right: 7rem;
         display: inline-block;
         background: $color-white;
@@ -238,5 +244,17 @@
             height: 100%;
             border-radius: 50%;
         }
+    }
+}
+
+@keyframes moveDown
+{
+    0%
+    {
+        transform: translateY(-10rem);
+    }
+    100%
+    {
+        transform: translateY(0);
     }
 }

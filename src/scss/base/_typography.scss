@@ -55,3 +55,70 @@ a
     text-decoration: none;
     color: inherit;
 }
+.heading__shape
+{
+    color: $color-white;
+    width: 15rem;
+    background: #699cf5;
+    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+    padding: .3rem 2rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+
+    @include respond(phone){font-size: 1.3rem;}
+}
+.heading__primary
+{
+    color: $color-white;
+    margin-left: 2rem;
+    font-size: 2.6rem;
+    font-weight: 400;
+
+    @include respond(phone){font-size: 2.3rem;}
+}
+.heading__secondary
+{
+    font-size: 2.2rem;
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 2px solid $color-gray-dark-2;
+    margin-bottom: 4rem !important;
+    margin-top: 4rem !important;
+}
+.paragraph
+{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    line-height: 200%;
+    margin-bottom: 2rem;
+
+    @include respond(phone){font-size: 1.3rem;line-height: 170%;}
+}
+.btn
+{
+    border: 1px solid $color-primary;
+    border-radius: .3rem;
+    padding: .5rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+
+    @include respond(phone){font-size: 1.3rem;padding: .3rem 1.5rem;}
+}
+.btn--red
+{
+    color: $color-white;
+    background: $color-primary;
+
+    &:hover, &:active
+    {
+        background: $color-primary-dark;
+        border: 1px solid $color-primary-dark;
+    }
+}
+.btn--left{
+    margin-left: 2rem;
+}

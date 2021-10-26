@@ -53,3 +53,15 @@ navCartIcon.addEventListener("click", () =>
     navList.classList.remove("active");
     navSearch.classList.remove("active");
 });
+
+
+// sticky when reaching half of the header
+var waypoint = new Waypoint({
+    element: document.querySelector(".header"),
+    handler: function(direction) {
+        console.log("asdkajsdjkh");
+      document.querySelector(".nav").classList.add("fixed");
+    //   document.querySelector(".header").style.marginTop = "8rem"
+    },
+    offset: 20 
+});

@@ -1,0 +1,76 @@
+.slider
+{
+    overflow: hidden;
+    position: relative;
+    height: 90vh;
+    margin-bottom: 2rem !important;
+
+    @include respond(tab-port){height: 50vh;}
+    @include respond(phone){height: 45vh;}
+}
+.slide
+{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: all .2s ease;
+
+    &__image
+    {
+        width: 60%;
+        height: 60rem;
+
+        @include respond(tab-port){height: 40rem; width: 50%;}
+        @include respond(phone){width: 70%;}
+    }
+    &__image:hover + &__cat{background: $color-gray-dark-2;}
+    &__cat
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 3rem 8rem;
+        border-radius: 1rem;
+        background: rgba($color-gray-dark-2, .3);
+        color: $color-white;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:hover{background: $color-gray-dark-2;}
+
+        @include respond(tab-port){padding: 2rem 5rem;font-size: 1.5rem;}
+        @include respond(phone){padding: 1.5rem 3rem;}
+    }
+}
+.slide__container
+{
+    position: relative;
+}
+.btn__slider
+{
+    background: rgba($color-gray-dark-2, .2);
+    color: $color-white;
+    padding: 1rem 2rem;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all .2s ease-in-out;
+
+    &:hover{background: $color-gray-dark-2}
+
+    &--right
+    {
+        right: 0;
+    }
+
+    @include respond(tab-port){padding: .3rem .5rem;}
+}
