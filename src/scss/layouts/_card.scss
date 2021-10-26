@@ -1,0 +1,134 @@
+// .card
+// {
+//     font-size: 2rem;
+//     text-decoration: none;
+    
+//     @include respond(tab-port)
+//     {
+//         font-size: 1.7rem;
+//     }
+    
+//     & > * 
+//     {
+//         margin-bottom: .6rem;
+//     }
+
+//     // Top Categories section(index)
+//     &__cat--main-page
+//     {
+//         box-shadow: none;
+
+//         height: 100%;
+//         &-img
+//         {
+//             height: 20rem;
+//             width: 100%;
+//             @include respond(tab-port)
+//             {
+//                 height: 15rem;
+//             }
+//         }
+//     }
+
+//     // Our Products section(index)
+//     &__img--container
+//     {
+//         position: relative;
+//         color: $color-white;
+
+//         &-img
+//         {
+//             height: 20rem;
+//             width: 100%;
+
+//             @include respond(tab-port)
+//             {
+//                 height: 15rem;
+//             }
+//         }
+//         &-text
+//         {
+//             position: absolute;
+//             right: 1rem;
+//             top: 1rem;
+//             background: $color-primary;
+//             padding: 0 .7rem;
+//             font-size: 1.2rem;
+//             text-transform: uppercase;
+
+//             @include respond(tab-port)
+//             {
+//                 right: .6rem;
+//                 top: .6rem;
+//                 padding: 0 .6rem;
+//                 font-size: .9rem;
+//             }
+//         }
+//     }
+//     &__name
+//     {
+//         text-overflow: ellipsis;
+//         overflow: hidden;
+//         text-align: center;
+//         color: $color-black;
+//     }
+//     &__price
+//     {
+//         display: flex;
+//         justify-content: space-evenly;
+//         font-weight: 700;
+//         letter-spacing: 1px;
+
+//         &--discount
+//         {
+//             color: $color-primary;
+//         }
+//         &--old
+//         {
+//             color: $color-grey-dark-2;
+//         }
+//     }
+//     &__stars
+//     {
+//         display: flex;
+//         justify-content: center;
+//         margin-bottom: .6rem;
+
+//         &--svg
+//         {
+//             height: 2rem;
+//             width: 2.2rem;
+//             fill: yellow;
+//         }
+//     }
+//     &__cart--container
+//     {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin-bottom: 1.5rem;
+
+//         @include respond(tab-port)
+//         {
+//             margin-bottom: 1rem;   
+//         }
+
+//         &--btn
+//         {
+//             margin-right: 1rem;
+
+//             @include respond(tab-port)
+//             {
+//                 margin-right: .7rem;   
+//             }
+//         }
+//         &--svg
+//         {
+//             height: 2.5rem;
+//             width: 2.5rem;
+//             fill: $color-primary;
+//         }
+//     }
+
+
+// }

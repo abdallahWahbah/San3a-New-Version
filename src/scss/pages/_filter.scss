@@ -1,0 +1,201 @@
+// .filter
+// {
+//     padding: 4rem 0 0 0;
+
+//     &__header
+//     {
+//         display: flex;
+//         align-items: center;
+
+//         & > *:not(:last-child)
+//         {
+//             margin-right: 6rem;
+//         }
+
+//         &--name
+//         {
+//             font-size: 2rem;
+//             margin-right: auto !important;
+//         }
+//     }
+//     &__sort--container
+//     {
+//         display: flex;
+//         align-items: center;
+//     }
+//     &__sort--name
+//     {
+//         margin-right: 1rem;
+//         font-size: 1.6rem;
+//         font-weight: 400;
+//     }
+//     &__input
+//     {
+//         padding: 1.2rem .5rem;
+//         background: $color-grey-light-2;
+//         border: none;
+//         font-size: 1.4rem;
+
+//         &:focus{outline: none;}
+//     }
+//     &__line
+//     {
+//         margin: 3rem 0;
+//     }
+
+//     &__container
+//     {
+//         .row{padding-bottom: 0;}
+//         &--filters
+//         {
+//             box-shadow: none !important;
+//         }
+//         &--header
+//         {
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             margin-bottom: 1rem;
+
+//             background: $color-grey-light-2;
+//             padding: 1rem .5rem;
+//             cursor: pointer;
+//         }
+//         .collapsible
+//         {
+//             background: $color-grey-light-2;
+//             border: none;
+//             font-size: 1.6rem;
+//             font-weight: 700;
+//         }
+//         &--arrow
+//         {
+//             font-size: 1.6rem;
+//             font-weight: 700;
+//             margin-right: .5rem;
+//         }
+//         &--details
+//         {
+//             margin: 1rem 0;
+//             display: none;
+
+//             .middle
+//             {
+//                 width: 100%;
+//                 margin: 2rem auto;
+
+//                 @include respond(tab-land)
+//                 {
+//                     width: 120%;
+//                     transform: scale(.8) translateX(-20%);
+//                 }
+//                 @include respond(tab-port)
+//                 {
+//                     width: 180%;
+//                     transform: scale(.4) translateX(-50%);                    
+//                 }
+//             }
+//         }
+//         &--list
+//         {
+//             list-style: none;
+
+//             & > *:not(:last-child)
+//             {
+//                 margin-bottom: .5rem;
+//             }
+//         }
+//         &--link
+//         {
+//             text-decoration: none;
+//             color: inherit;
+//             font-size: 1.6rem;
+//             font-weight: 700;
+//             padding: 0 .5rem;
+//         }
+
+//         &--radio-group
+//         {
+//             margin-bottom: 1rem;
+//             padding: 0 .5rem;
+
+//             display: flex;
+//             align-items: center;
+            
+
+//             input
+//             {
+//                 height: 1.3rem;
+//                 width: 1.3rem;
+//                 margin-right: 1rem;
+//             }
+//             label
+//             {
+//                 font-size: 1.6rem;
+//                 font-weight: 700;
+//             }
+//         }
+//     }
+//     &__colors
+//     {
+//         .product__form--container
+//         {
+//             width: 100%;
+
+//             .product__form--colors
+//             {
+//                 display: flex;
+//                 flex-wrap: wrap;
+
+//                 &-white
+//                 {
+//                     margin-left: 0;
+//                 }
+//                 &-purple
+//                 {
+//                     background: purple;
+//                 }
+//                 &-brown
+//                 {
+//                     background: brown;
+//                 }
+//                 &-orange
+//                 {
+//                     background: orange;
+//                 }
+//                 &>*
+//                 {
+//                     border-radius: 50%;
+//                     width: 2rem; 
+//                     height: 2rem;   
+//                     margin-right: 3rem;
+//                 }
+//                 .js--product__form--colors
+//                 {
+//                     margin-bottom: 1rem;
+//                 }
+//             }
+//         }
+//     }
+//     &__active
+//     {
+//         background: #555;
+//     }
+// }
+
+
+
+
+
+// .filter__price--container
+// {
+//     font-size: 1.6rem;
+//     font-weight: bold;
+    
+//     display: flex;
+//     justify-content: space-between;
+
+//     &-filter{cursor: pointer;color: $color-primary;}
+
+
+// }

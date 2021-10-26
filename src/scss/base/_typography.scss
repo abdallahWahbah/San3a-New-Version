@@ -1,0 +1,57 @@
+// .heading__primary
+// {
+//     color: $color-white;
+//     text-transform: uppercase;
+//     font-size: 2.5rem;
+//     font-weight: 700;
+//     letter-spacing: .3rem;
+//     animation: moveToRight 1s ease-in-out;
+
+//     @include respond(tab-land)
+//     {
+//            font-size: 2rem;
+//     }
+// }
+// .paragraph
+// {
+//     color: $color-white;
+//     line-height: 150%;
+//     font-size: 2rem;
+//     font-weight: 300;
+
+//     @include respond(tab-land)
+//     {
+//            font-size: 1.6rem;
+//     }
+// }
+
+// .heading__secondary
+// {
+//     color: $color-secondary;
+
+//     // text-transform: uppercase;
+//     margin-bottom: 3rem;
+//     display: inline-block;
+//     font-size: 2.5rem;
+//     font-weight: 700;
+//     display: inline-block;
+//     border-bottom: 3px solid $color-grey-dark-2;
+
+//     @include respond(tab-land)
+//     {
+//         margin-bottom: 2rem;
+//         font-size: 2rem;
+//         border-bottom: 2px solid $color-grey-dark-2;
+//     }
+
+//     @include respond(tab-port)
+//     {
+//         margin-bottom: 1.5rem;
+//     }
+    
+// }
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
