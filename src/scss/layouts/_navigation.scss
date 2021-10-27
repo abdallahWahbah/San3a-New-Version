@@ -24,6 +24,7 @@
         animation: moveDown 1s ease-in-out;
     }
     &.fixed + .header{margin-top: 15rem;}
+    &.fixed + .section__product{margin-top: 15rem;}
 
     // LOGO
     &__logo

@@ -56,12 +56,27 @@ navCartIcon.addEventListener("click", () =>
 
 
 // sticky when reaching half of the header
-var waypoint = new Waypoint({
-    element: document.querySelector(".header"),
-    handler: function(direction) {
-        console.log("asdkajsdjkh");
-      document.querySelector(".nav").classList.add("fixed");
-    //   document.querySelector(".header").style.marginTop = "8rem"
-    },
-    offset: 20 
-});
+// For index page
+if(document.querySelector(".header"))
+{
+    var waypoint = new Waypoint({
+        element: document.querySelector(".header"),
+        handler: function(direction) {
+            console.log("asdkajsdjkh");
+        document.querySelector(".nav").classList.add("fixed");
+        },
+        offset: 20 
+    });
+}
+// For product page 
+if(document.querySelector(".section__product"))
+{
+    var waypoint = new Waypoint({
+        element: document.querySelector(".section__product"),
+        handler: function(direction) {
+            console.log("asdkajsdjkh");
+        document.querySelector(".nav").classList.add("fixed");
+        },
+        offset: 20 
+    });
+}

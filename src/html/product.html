@@ -7,15 +7,15 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="./src/scss/main.scss">
+        <link rel="stylesheet" href="../scss/main.scss">
 
-        <title>San3a</title>
+        <title>Product</title>
     </head>
     <body>
         <!-- layouts/navigation -->
         <nav class="nav">
             <div class="nav__container">
-                <img src="./src/img/logo.jpeg" alt="Navigation logo" class="nav__logo">
+                <img src="../img/logo.jpeg" alt="Navigation logo" class="nav__logo">
 
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
@@ -40,7 +40,7 @@
                 <div class="nav__cart">
                     <div class="nav__cart--item">
                         <div class="nav__cart--image-container">
-                            <img src="./src/img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
                         </div>
                         <div class="nav__cart--item-details">
                             <h3 class="nav__cart--item-title">Product 1</h3>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="nav__cart--item">
                         <div class="nav__cart--image-container">
-                            <img src="./src/img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
                         </div>
                         <div class="nav__cart--item-details">
                             <h3 class="nav__cart--item-title">Product 1</h3>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="nav__cart--item">
                         <div class="nav__cart--image-container">
-                            <img src="./src/img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
                         </div>
                         <div class="nav__cart--item-details">
                             <h3 class="nav__cart--item-title">Product 1</h3>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="nav__cart--item">
                         <div class="nav__cart--image-container">
-                            <img src="./src/img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
                         </div>
                         <div class="nav__cart--item-details">
                             <h3 class="nav__cart--item-title">Product 1</h3>
@@ -94,88 +94,161 @@
 
 
 
-        
-        <!-- pages/home, base/typo -->
-        <header class="header">
-            <h3 class="heading__shape">Best seller</h3>
-            <h1 class="heading__primary">Featured products</h1>
-            <p class="paragraph">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Sed nesciunt </p>
-            <a href="#" class="btn btn--red btn--left">Purchase now</a>
-        </header>
+        <!-- pages/product -->
+        <section class="section__product">
+            <div class="product__main">
+                <div class="product__images">
+                    <img src="../img/prod-2.jfif" alt="" class="product__image--big">
+                    <div class="product__images--small-container">
+                        <img src="../img/prod-3.jfif" alt="" class="product__image--small">
+                        <img src="../img/prod-4.jfif" alt="" class="product__image--small">
+                        <img src="../img/prod-1.jfif" alt="" class="product__image--small">
+                    </div>
+                </div>
+                <div class="product__details">
+                    <h3 class="product__title">Product title</h3>
+                    <div class="product__stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product__price">$125.00</div>
+                    <hr>
+                    <p class="product__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi incidunt quis nam totam iusto quaerat atque animi, earum vero suscipit impedit at necessitatibus, ipsa sit. Veritatis et at inventore eum.</p>
+                    <p class="product__select--header">Select Color</p>
+                    <div class="product__colors">
+                        <div class="product__color product__color--1"></div>
+                        <div class="product__color product__color--2"></div>
+                        <div class="product__color product__color--3"></div>
+                        <div class="product__color product__color--4"></div>
+                        <div class="product__color product__color--5"></div>
+                    </div>
+                    <p class="product__select--header">Select Quantity</p>
+                    <div class="product__quantity">
+                        <div class="product__minus">-</div>
+                        <div class="product__quantity--value">1</div>
+                        <div class="product__plus">+</div>
+                    </div>
+                    <p class="product__select--header">Size</p>
+                    <div class="product__sizes">
+                        <div class="product__size product__size-l">L</div>
+                        <div class="product__size product__size-m">M</div>
+                        <div class="product__size product__size-xl">XL</div>
+                        <div class="product__size product__size-xxl">XXL</div>
+                    </div>
+                    <div class="product__cart__like">
+                        <a class="btn btn--red">Add to cart</a>
+                        <ion-icon class="product__like" name="heart-outline"></ion-icon>
+                    </div>
+                    <a href="#" class="product__free--shipping">Free Shipping & Returns</a>
+                </div>
+            </div>
 
+            <div class="product__desc__reviews">
+                <h1 class="product__desc--header">Description</h1>
+                <h1 class="product__reviews--header">Reviews</h1>
+            </div>
 
+            <p class="product__desc--detailed">
+                <p class="product__desc--detailed">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                    unchanged
+                </p>
+            </p>
 
+            <hr>
 
+            <div class="product__reviews">
+                <h1 class="product__reviews--all">All reviews</h1>
+                <div class="product__reviews--container">
+                    <div class="product__reviews--review">
+                        <img src="../img/baby-girl.jpg" alt="Review" class="product__reviews--review-img">
+                        <div class="product__reviews--review-name">
+                            <h3 class="product__reviews--review-name-name">Abdallah Wahbah</h3>
+                            <div class="product__stars">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="product__reviews--review-paragraph">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially
+                            unchanged
+                        </p>
+                    </div>
 
+                    <p class="product__reviews--date">23-may-2011</p>
 
-        <!-- Pages/home, base/typo -->
-        <section class="section__top">
-            <h2 class="heading__secondary">Top Categories</h2>
-            <div class="top">
-                <div class="cat cat--1">
-                    <div class="cat__container">
-                        <img src="./src/img/cat-3.jpg" alt="Pottery" class="cat__image">
-                        <div class="cat__title--container">
-                            <h3 class="cat__title">Pottery</h3>
-                        </div> 
-                    </div>
                 </div>
-                <div class="cat cat--2">
-                    <div class="cat__container">
-                        <img src="./src/img/cat-4.jpg" alt="Wicker" class="cat__image">
-                        <div class="cat__title--container">
-                            <h3 class="cat__title">Wicker</h3>
-                        </div> 
+                <hr>
+                <div class="product__reviews--container">
+                    <div class="product__reviews--review">
+                        <img src="../img/baby-girl.jpg" alt="Review" class="product__reviews--review-img">
+                        <div class="product__reviews--review-name">
+                            <h3 class="product__reviews--review-name-name">Abdallah Wahbah</h3>
+                            <div class="product__stars">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="product__reviews--review-paragraph">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially
+                            unchanged
+                        </p>
                     </div>
+
+                    <p class="product__reviews--date">23-may-2011</p>
+
                 </div>
-                <div class="cat cat--3">
-                    <div class="cat__container">
-                        <img src="./src/img/cat-8.jpg" alt="Embroidery" class="cat__image">
-                        <div class="cat__title--container">
-                            <h3 class="cat__title">Embroidery</h3>
-                        </div> 
+                <hr>
+                <div class="product__reviews--container">
+                    <div class="product__reviews--review">
+                        <img src="../img/baby-girl.jpg" alt="Review" class="product__reviews--review-img">
+                        <div class="product__reviews--review-name">
+                            <h3 class="product__reviews--review-name-name">Abdallah Wahbah</h3>
+                            <div class="product__stars">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="product__reviews--review-paragraph">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially
+                            unchanged
+                        </p>
                     </div>
+
+                    <p class="product__reviews--date">23-may-2011</p>
+
                 </div>
-                <div class="cat cat--4">
-                    <div class="cat__container">
-                        <img src="./src/img/cat-5.jpg" alt="sculpture" class="cat__image">
-                        <div class="cat__title--container">
-                            <h3 class="cat__title">sculpture</h3>
-                        </div> 
-                    </div>
-                </div>
-                <div class="cat cat--5">
-                    <div class="cat__container">
-                        <img src="./src/img/cat-9.jpg" alt="ceramic paste" class="cat__image">
-                        <div class="cat__title--container">
-                            <h3 class="cat__title">ceramic paste</h3>
-                        </div> 
-                    </div>
-                </div>
-                <div class="cat cat--6">
-                    <div class="cat__container">
-                        <img src="./src/img/cat-7.jpg" alt="candles" class="cat__image">
-                        <div class="cat__title--container">
-                            <h3 class="cat__title">candles</h3>
-                        </div> 
-                    </div>
-                </div>
-                <div class="cat cat--7">
-                    <div class="cat__container">
-                        <img src="./src/img/cat-6.jpg" alt="String Art" class="cat__image">
-                        <div class="cat__title--container">
-                            <h3 class="cat__title">String Art</h3>
-                        </div> 
-                    </div>
-                </div>
-                <div class="cat cat--8">
-                    <div class="cat__container">
-                        <img src="./src/img/cat-2.jpg" alt="Crochet" class="cat__image">
-                        <div class="cat__title--container">
-                            <h3 class="cat__title">Crochet</h3>
-                        </div> 
-                    </div>
-                </div>
+                <hr>
+
             </div>
         </section>
 
@@ -186,10 +259,10 @@
 
         <!-- comp/product, base/typo -->
         <section class="section__products">
-            <h2 class="heading__secondary">Our Products</h2>
+            <h2 class="heading__secondary">Related Products</h2>
             <div class="products">
                 <div class="product">
-                    <img src="./src/img/made-1.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-1.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--old">200$</div>
@@ -209,7 +282,7 @@
                     <div class="product__badge">5%</div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-2.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-2.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--new">190%</div>
@@ -227,7 +300,7 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-3.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-3.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--old">200$</div>
@@ -247,7 +320,7 @@
                     <div class="product__badge">New</div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-4.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-4.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--old">200$</div>
@@ -267,7 +340,7 @@
                     <div class="product__badge">20%</div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-5.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-5.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--old">200$</div>
@@ -287,7 +360,7 @@
                     <div class="product__badge">5%</div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-6.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-6.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--new">190%</div>
@@ -305,7 +378,7 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-7.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-7.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--old">200$</div>
@@ -325,7 +398,7 @@
                     <div class="product__badge">New</div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-8.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-8.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--old">200$</div>
@@ -345,7 +418,7 @@
                     <div class="product__badge">20%</div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-9.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-9.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--old">200$</div>
@@ -365,7 +438,7 @@
                     <div class="product__badge">5%</div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-10.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-10.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--new">190%</div>
@@ -383,7 +456,7 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-11.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-11.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--old">200$</div>
@@ -403,7 +476,7 @@
                     <div class="product__badge">New</div>
                 </div>
                 <div class="product">
-                    <img src="./src/img/made-12.jfif" alt="Product 1" class="product__image">
+                    <img src="../img/made-12.jfif" alt="Product 1" class="product__image">
                     <h3 class="product__title">Product name</h3>
                     <div class="product__price--container">
                         <div class="product__price--old">200$</div>
@@ -422,9 +495,6 @@
                     </div>
                     <div class="product__badge">20%</div>
                 </div>
-            </div>
-            <div class="btn--load-more">
-                <a href="#" class="btn btn--red">Load more</a href="#">
             </div>
         </section>
 
@@ -436,8 +506,8 @@
         <footer class="footer">
             <div class="footer__left">
                 <div class="footer__image--container">
-                    <img src="./src/img/hand.svg" alt="" class="footer__image">
-                    <img src="./src/img/san3a.svg" alt="" class="footer__image">
+                    <img src="../img/hand.svg" alt="" class="footer__image">
+                    <img src="../img/san3a.svg" alt="" class="footer__image">
                 </div>
                 <p class="footer__copy">&copy; October-November 2021 By <br>Abdallah Wahbah / San3a team</p>
             </div>
@@ -466,15 +536,18 @@
                 </ul>
             </div>
         </footer>
-        
+
+
+
 
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <script src="./src/js/noframework.waypoints.min.js"></script>
+        <script src="../js/noframework.waypoints.min.js"></script>
 
-        <script src="./src/js/navigation.js"></script>
+        <script src="../js/navigation.js"></script>
+        <script src="../js/product.js"></script>
         <!-- <script src="./src/js/slider.js"></script> -->
     </body>
 </html>
