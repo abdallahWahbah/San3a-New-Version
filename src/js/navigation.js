@@ -63,7 +63,7 @@ if(document.querySelector(".header"))
         element: document.querySelector(".header"),
         handler: function(direction) {
             console.log("asdkajsdjkh");
-        document.querySelector(".nav").classList.add("fixed");
+            document.querySelector(".nav").classList.add("fixed");
         },
         offset: 20 
     });
@@ -75,8 +75,41 @@ if(document.querySelector(".section__product"))
         element: document.querySelector(".section__product"),
         handler: function(direction) {
             console.log("asdkajsdjkh");
-        document.querySelector(".nav").classList.add("fixed");
+            document.querySelector(".nav").classList.add("fixed");
         },
         offset: 20 
     });
+}
+// For addItem page 
+if(document.querySelector(".add"))
+{
+    var waypoint = new Waypoint({
+        element: document.querySelector(".add"),
+        handler: function(direction) {
+            console.log("asdkajsdjkh");
+            document.querySelector(".nav").classList.add("fixed");
+        },
+        offset: 20 
+    });
+}
+// For checkout page 
+if(document.querySelector(".checkout"))
+{
+    var waypoint = new Waypoint({
+        element: document.querySelector(".checkout"),
+        handler: function(direction) {
+            console.log("asdkajsdjkh");
+            document.querySelector(".nav").classList.add("fixed");
+        },
+        offset: 20 
+    });
+}
+
+// --------------------------- Click on logo to go to the main page --------------------------- 
+if(document.querySelector(".nav__logo"))
+{
+    document.querySelector(".nav__logo").addEventListener("click", () =>
+    {
+        location.href="./index.html"
+    })
 }

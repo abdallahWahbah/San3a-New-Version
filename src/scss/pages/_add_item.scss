@@ -1,155 +1,161 @@
-// .add
-// {
-//     padding: 4rem 0;
-//     margin: 0 15rem !important;
-//     color: $color-grey-dark-2;
+.add
+{
+    // padding: 4rem 0;
+    margin: 0 15rem !important;
+    margin-top: 7rem !important;
 
-//     &__welcome
-//     {
-//         font-size: 4rem;
-//         font-weight: 700;
-//         margin-bottom: 2rem;
+    color: $color-gray-dark-2;
+
+    &__welcome
+    {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
         
-//         @include respond(tab-land)
-//         {
-//             // اقل من 1200 بكسل 
-//             font-size: 3rem;
-//             margin-bottom: 1.7rem;
-//         }
+        @include respond(tab-land)
+        {
+            // اقل من 1200 بكسل 
+            font-size: 3rem;
+            margin-bottom: 1.7rem;
+        }
 
-//         @include respond(tab-port)
-//         {
-//             // اقل من 900 بكسل
-//             font-size: 2.5rem;
-//             margin-bottom: 1.5rem;   
-//         }
-//     }
-//     &__container
-//     {
-//         background: $color-grey-light-1;
-//         border-radius: 2rem;
-//         padding: 4rem;
+        @include respond(tab-port)
+        {
+            // اقل من 900 بكسل
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;   
+        }
+    }
+    &__container
+    {
+        background: $color-gray-light-1;
+        border-radius: 2rem;
+        padding: 4rem;
 
-//         @include respond(tab-land)
-//         {
-//             padding: 3rem;   
-//         }
+        @include respond(tab-land)
+        {
+            padding: 3rem;   
+        }
 
-//         @include respond(tab-port)
-//         {
-//             padding: 2.2rem;   
-//         }
-//     }
-//     &__what
-//     {
-//         font-size: 2.5rem;
+        @include respond(tab-port)
+        {
+            padding: 2.2rem;   
+        }
+    }
+    &__what
+    {
+        font-size: 2.5rem;
 
-//         @include respond(tab-land)
-//         {
-//             font-size: 2rem;   
-//         }
+        @include respond(tab-land)
+        {
+            font-size: 2rem;   
+        }
 
-//         @include respond(tab-port)
-//         {
-//             font-size: 1.7rem;   
-//         }
-//     }
-//     &__form
-//     {
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: center;
+        @include respond(tab-port)
+        {
+            font-size: 1.7rem;   
+        }
+        
+        @include respond(phone){font-size: 1.5rem;}
+    }
+    &__form
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-//         &--two-items
-//         {
-//             margin: 2rem 0;
-//             flex: 0 1 49%;
+        &--two-items
+        {
+            margin: 2rem 0;
+            flex: 0 1 49%;
 
-//             display: flex;
-//             flex-direction: column;
+            display: flex;
+            flex-direction: column;
 
-//             @include respond(tab-land)
-//             {
-//                 margin: 1.7rem 0;   
-//             }
+            @include respond(tab-land)
+            {
+                margin: 1.7rem 0;   
+            }
 
-//             @include respond(tab-port)
-//             {
-//                 margin: 1.5rem 0;   
-//             }
-//         }
-//         &--text
-//         {
-//             font-size: 1.8rem;
-//             font-weight: 400;
-//             margin-bottom: 1rem;
+            @include respond(tab-port)
+            {
+                margin: 1.5rem 0;   
+                flex: 0 1 100%;
+            }
+        }
+        &--text
+        {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
 
-//             @include respond(tab-land)
-//             {
-//                 font-size: 1.5rem;
-//             }
+            @include respond(tab-land)
+            {
+                font-size: 1.5rem;
+            }
 
-//             @include respond(tab-port)
-//             {
-//                 font-size: 1.3rem;   
-//             }
-//             &-choose{cursor: pointer;}
-//         }
-//         &--input-normal
-//         {
-//             width: 90%;
-//             padding: 1.5rem;
-//             font-size: 1.6rem;
-//             letter-spacing: 1px;
+            @include respond(tab-port)
+            {
+                font-size: 1.3rem;   
+            }
+            &-choose{cursor: pointer;}
+        }
+        &--input-normal
+        {
+            width: 90%;
+            padding: 1.5rem;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
 
-//             &:focus
-//             {
-//                 outline: none;
-//             }
-//             &-big
-//             {
-//                 width: 100%;
-//             }
+            &:focus
+            {
+                outline: none;
+            }
+            &-big
+            {
+                width: 100%;
+            }
 
-//             @include respond(tab-land)
-//             {
-//                 font-size: 1.4rem;   
-//             }
+            @include respond(tab-land)
+            {
+                font-size: 1.4rem;   
+            }
 
-//             @include respond(tab-port)
-//             {
-//                 font-size: 1.3rem;   
-//             }
-//         }
-//         &--one-item
-//         {
-//             margin: 2rem 0;
-//             width: 100%;
-//         }
-//         &--input-big
-//         {
-//             display: none;
-//         }
-//     }
-//     #blah
-//     {
-//         width: 100%;
-//         height: 40rem;
-//         margin-top: 1rem;
+            @include respond(tab-port)
+            {
+                font-size: 1.3rem;   
+                width: 100%;
+            }
+        }
+        &--one-item
+        {
+            margin: 2rem 0;
+            width: 100%;
+        }
+        &--input-big
+        {
+            display: none;
+        }
+    }
+    #blah
+    {
+        width: 100%;
+        height: 40rem;
+        margin-top: 1rem;
 
-//         @include respond(tab-land)
-//         {
-//             height: 30rem;   
-//         }
+        @include respond(tab-land)
+        {
+            height: 30rem;   
+        }
 
-//         @include respond(tab-port)
-//         {
-//             height: 20rem;   
-//         }
-//     }
-//     &__button
-//     {
-//         padding: 1rem 4rem;
-//         cursor: pointer;
-//     }
-// }
+        @include respond(tab-port)
+        {
+            height: 20rem;   
+        }
+    }
+    &__button
+    {
+        padding: 1rem 4rem;
+        cursor: pointer;
+    }
+}

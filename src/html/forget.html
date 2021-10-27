@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forget your password ?</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../scss/main.scss">
+        
+    </head>
+    <body>
+        
+        <section class="signup"><!--pages/signUp, comp/form-->
+                <div class="signup__left">
+
+                    <img src="../img/hand.svg" alt="logo" class="signup__logo signup__logo--js">
+                    <img src="../img/san3a.svg" alt="logo" class="signup__logo signup__logo--js">
+                    <p class="signup__paragraph">
+                        San3a is an E-commerce and E-learning platform for Handmade products which customers can reach it using their laptop through our website or they can use their smart phones and use our mobile app.  Sellers can sell their  Handmade products and upload videos to teach people how these products are made with easy and simple tutorials         
+                    </p>
+                </div>
+                <div class="signup__right little__height">
+                    <form action="#" class="form"> <!--components/form-->
+                        
+                        <h1 class="form__header">Forget password?</h1>
+
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Please enter your email or your phone number" id="forgettext" required>
+                            <label for="forgettext" class="form__label">Email address</label>
+                        </div>
+
+                        <button class="btn btn--red form__button">Send</button>
+
+                    </form>                    
+                </div>
+        </section>
+
+
+        <script>
+            Array.from(document.querySelectorAll(".signup__logo--js")).forEach(e => {
+                e.addEventListener("click", () => {
+                    location.href = "./index.html"
+                });
+            });
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="../js/noframework.waypoints.min.js"></script>
+
+        <script src="../js/navigation.js"></script>
+        <script src="../js/product.js"></script>
+        <!-- <script src="./src/js/slider.js"></script> -->
+    </body>
+</html>

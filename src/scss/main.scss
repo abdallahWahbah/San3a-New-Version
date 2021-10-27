@@ -4,12 +4,16 @@
 @import 'base/base';
 @import 'base/typography';
 
+@import 'components/form';
 @import 'components/product';
 @import 'components/slider';
 
 @import 'layouts/footer';
 @import 'layouts/navigation';
 
+@import 'pages/add_item';
+@import 'pages/checkout';
 @import 'pages/home';
 @import 'pages/product';
 @import 'pages/profile';
+@import 'pages/signUp';

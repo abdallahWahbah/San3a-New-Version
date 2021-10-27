@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../scss/main.scss">
+
+    </head>
+    <body>
+        
+        <section class="signup"><!--pages/signUp, comp/form-->
+                <div class="signup__left">
+
+                    <img src="../img/hand.svg" alt="logo" class="signup__logo signup__logo--js">
+                    <img src="../img/san3a.svg" alt="logo" class="signup__logo signup__logo--js">
+                    <p class="signup__paragraph">
+                        San3a is an E-commerce and E-learning platform for Handmade products which customers can reach it using their laptop through our website or they can use their smart phones and use our mobile app.  Sellers can sell their  Handmade products and upload videos to teach people how these products are made with easy and simple tutorials         
+                    </p>
+                </div>
+                <div class="signup__right">
+
+                    <form action="#" class="form"> <!--components/form-->
+                        
+                        <h1 class="form__header">Create account</h1>
+                        
+                        <div class="form__group form__group--radio-first-input">
+                            <div class="form__radio--group">
+                                <input type="radio" class="form__radio--input form__radio--input--signup-js" id="customer" name="accounttype"> <!-- value="customer"-->
+                                <label for="customer" class="form__radio--label">
+                                    <span class="form__radio--button"></span>
+                                    Customer
+                                </label>
+                            </div>
+                            <div class="form__radio--group">
+                                <input type="radio" class="form__radio--input form__radio--input--signup-js" id="seller" name="accounttype"> <!-- value="seller"-->
+                                <label for="seller" class="form__radio--label">
+                                    <span class="form__radio--button"></span>
+                                    Seller
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input form__input--signup--name-js" placeholder="User name" id="name" required> <!--name="name"-->
+                            <label for="name" class="form__label">User name</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="email" class="form__input form__input--signup--email-js" placeholder="Email address" id="email" required> <!--name="email"-->
+                            <label for="email" class="form__label">Email address</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="password" class="form__input form__input--signup--pass1-js" placeholder="Password" id="password" required>
+                            <label for="password" class="form__label">Password</label>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="password" class="form__input form__input--signup--pass2-js" placeholder="Repeat password" id="repeatpassword" required>
+                            <label for="repeatpassword" class="form__label">Repeat password</label>
+                        </div>
+
+                        <button class="btn btn--red form__button form__button--signup-js">Sign up</button>
+
+                        <h1 class="or"><span class="or__span">OR</span></h1> <!--pages/signUp-->
+
+                        <div class="form__links--container">
+                            <a href="#" class="form__links--href form__links--href--1">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                            <a href="#" class="form__links--href form__links--href--2">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a href="#" class="form__links--href form__links--href--3">
+                                <ion-icon name="logo-google"></ion-icon>
+                            </a>
+                        </div>
+
+                        <p class="form__already">Already have an account? <a href="login.html" class="form__already--log">Login</a></p>
+                    </form>
+
+
+                    
+                </div>
+        </section>
+
+
+        <script>
+            Array.from(document.querySelectorAll(".signup__logo--js")).forEach(e =>
+            {
+                e.addEventListener("click", () =>
+                {
+                    location.href = "./index.html"
+                });
+            });
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="../js/noframework.waypoints.min.js"></script>
+
+        <script src="../js/navigation.js"></script>
+        <script src="../js/product.js"></script>
+        <!-- <script src="./src/js/slider.js"></script> -->
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adding new item</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../scss/main.scss">
+    </head>
+    <body>
+
+        <!-- layouts/navigation -->
+        <nav class="nav">
+            <div class="nav__container">
+                <img src="../img/logo.jpeg" alt="Navigation logo" class="nav__logo">
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Tutorials</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Categories</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+                </ul>
+
+                <div class="nav__icons">
+                    <ion-icon class="js--nav__list--icon" name="menu-outline"></ion-icon>
+                    <ion-icon class="js--nav__list--search" name="search"></ion-icon>
+                    <ion-icon name="person"></ion-icon>
+                    <ion-icon class="js--nav__list--cart" name="cart"></ion-icon>
+                </div>
+
+                <div class="nav__search">
+                    <input type="text" class="nav__input" placeholder="Search for a product ....">
+                    <ion-icon class="nav__search--icon" name="search-outline"></ion-icon>
+                </div>
+
+                <div class="nav__cart">
+                    <div class="nav__cart--item">
+                        <div class="nav__cart--image-container">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                        </div>
+                        <div class="nav__cart--item-details">
+                            <h3 class="nav__cart--item-title">Product 1</h3>
+                            <div class="nav__cart--item--price-details">
+                                <h5 class="nav__cart--item-price">200$</h5>
+                                <h5 class="nav__cart--item-offer">200$</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__cart--item">
+                        <div class="nav__cart--image-container">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                        </div>
+                        <div class="nav__cart--item-details">
+                            <h3 class="nav__cart--item-title">Product 1</h3>
+                            <div class="nav__cart--item--price-details">
+                                <h5 class="nav__cart--item-price">200$</h5>
+                                <h5 class="nav__cart--item-offer">200$</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__cart--item">
+                        <div class="nav__cart--image-container">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                        </div>
+                        <div class="nav__cart--item-details">
+                            <h3 class="nav__cart--item-title">Product 1</h3>
+                            <div class="nav__cart--item--price-details">
+                                <h5 class="nav__cart--item-price">200$</h5>
+                                <h5 class="nav__cart--item-offer">200$</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__cart--item">
+                        <div class="nav__cart--image-container">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                        </div>
+                        <div class="nav__cart--item-details">
+                            <h3 class="nav__cart--item-title">Product 1</h3>
+                            <div class="nav__cart--item--price-details">
+                                <h5 class="nav__cart--item-price">200$</h5>
+                                <h5 class="nav__cart--item-offer">200$</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+
+
+
+
+
+
+        <section class="add"> <!--pages/additem-->
+
+            <h1 class="add__welcome">Welcome to our store</h1>
+
+            <div class="add__container">
+                <h2 class="add__what">What will you add today?</h2>
+                <form action="#" class="add__form">
+                    <div class="add__form--two-items">
+                        <h3 class="add__form--text">Product name:</h3>
+                        <input type="text" class="add__form--input-normal add__item--name-js" name="name">
+                    </div>
+
+                    <div class="add__form--two-items">
+                        <h3 class="add__form--text">Quantity:</h3>
+                        <input type="text" class="add__form--input-normal add__form--input-normal-big add__item--quantity-js" name="quantity">
+                    </div>
+
+                    <div class="add__form--two-items">
+                        <h3 class="add__form--text">Price of the product:</h3>
+                        <input type="text" class="add__form--input-normal add__item--price-js" name="price">
+                    </div>
+
+                    <div class="add__form--two-items">
+                        <h3 class="add__form--text">Specifications:</h3>
+                        <input type="text" class="add__form--input-normal add__form--input-normal-big add__item--spec-js" name="spec">
+                    </div>
+
+                    <div class="add__form--two-items">
+                        <h3 class="add__form--text">Implementation time:</h3>
+                        <input type="text" class="add__form--input-normal add__item--time-js" name="time">
+                    </div>
+
+                    <div class="add__form--two-items">
+                        <h3 class="add__form--text">Delivery service:</h3>
+                        <input type="text" class="add__form--input-normal add__form--input-normal-big add__item--delivery-js" name="delivery">
+                    </div>
+
+                    <div class="add__form--one-item">
+                        <label for="inputimage" class="add__form--text add__form--text-choose">Click here to choose product picture:</label>
+                        <input type="file" class="add__form--input-big add__item--picture" name="image" accept="image/*" id="inputimage" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                        <img src="../img/prod-2.jfif" alt="product picture" id="blah">
+                    </div>
+
+                    <button class="btn btn--red add__button additem__page--add-product-js">Add product</button>
+                </form>
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- layouts/footer -->
+        <footer class="footer">
+            <div class="footer__left">
+                <div class="footer__image--container">
+                    <img src="../img/hand.svg" alt="" class="footer__image">
+                    <img src="../img/san3a.svg" alt="" class="footer__image">
+                </div>
+                <p class="footer__copy">&copy; October-November 2021 By <br>Abdallah Wahbah / San3a team</p>
+            </div>
+            <div class="footer__list--container">
+                <p class="footer__list--header">Our Servies</p>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Delivery information</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Shopping & return</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Special</a></li>
+                </ul>
+            </div>
+            <div class="footer__list--container">
+                <p class="footer__list--header">My Account</p>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">My order</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">My credit card</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">My Address</a></li>
+                </ul>
+            </div>
+            <div class="footer__list--container">
+                <p class="footer__list--header">Have a Question?</p>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Aldaqahlia, Mansoura university</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">+11111111111111111</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">0000000000@gmail.com</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="../js/noframework.waypoints.min.js"></script>
+
+        <script src="../js/navigation.js"></script>
+        <script src="../js/product.js"></script>
+        <!-- <script src="./src/js/slider.js"></script> -->
+    </body>
+</html>

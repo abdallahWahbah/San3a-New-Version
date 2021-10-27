@@ -1,260 +1,321 @@
-// .checkout
-// {
-//     padding: 4rem 0 0 0;
+.checkout
+{
+    // padding: 4rem 0 0 0;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
     
-//     &__header
-//     {
-//         display: flex;
-//         justify-content: space-evenly;
+    &__header
+    {
+        display: flex;
+        justify-content: space-evenly;
         
-//         font-size: 1.3rem;
-//         margin-bottom: 5rem;
+        font-size: 1.3rem;
+        margin-bottom: 5rem;
 
-//         @include respond(tab-port)
-//         {
-//             font-size: 1.2rem;
-//             margin-bottom: 3rem;
-//         }
-//     }
-//     &__name
-//     {
-//         border: 1px solid $color-grey-dark-2;
-//         cursor: pointer;
-//         flex: 0 1 50%;
-//         text-align: center;
-//         padding: .5rem 0;
-//         transition: all .2s ease-in-out;
-//     }
-//     .js--checkout__name-check{color: $color-primary;}
-//     &__item
-//     {
-//         display: flex;
-//         align-items: center;
+        @include respond(tab-port)
+        {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__name
+    {
+        border: 1px solid $color-gray-dark-2;
+        cursor: pointer;
+        flex: 0 1 50%;
+        text-align: center;
+        padding: .5rem 0;
+        transition: all .2s ease-in-out;
+    }
+    .js--checkout__name-check{color: $color-primary;}
+    &__item
+    {
+        margin-bottom: 3rem;
 
-//         & > *:not(:last-child){margin-right: 4rem;}
+        display: flex;
+        align-items: center;
 
-//         &--img
-//         {
-//             height: 14rem;
-//             width: 14rem;
-//         }
-//         &--details
-//         {
+        & > *:not(:last-child)
+        {
+            margin-right: 4rem;
             
-//             & > *:not(:last-child){margin-bottom: .5rem;}
-//         }
-//         &--name
-//         {
-//             font-size: 2rem;
-//             font-weight: 400;
-//         }   
-//         &--from
-//         {
-//             font-size: 1.5rem;
-//             font-weight: 400;
+            @include respond(phone){margin-right: 1.5rem;}
+        }
+
+        &--img
+        {
+            height: 14rem;
+            width: 14rem;
+
+            @include respond(phone){height: 8.5rem;width: 8.5rem; border-radius: 50%;}
+        }
+        &--details
+        {
             
-//         }
-//         &--city
-//         {
-//             color: #68B5F7;
-//         }
-//         &--save
-//         {
-//             font-size: 1.5rem;
-//             font-weight: 400;
-//             color: #68B5F7;
-//             cursor: pointer;
-//         }
-//         &--price
-//         {
-//             color: $color-primary;
-//             font-size: 1.9rem;
-//         }
-//         &--delete
-//         {
-//             border-radius: 50%;
-//             border: 1px solid $color-black;
-//             font-size: 2rem;
-//             padding: 0 1rem;
-//             cursor: pointer;
-//             &-icon
-//             {
-//                 transform: translateY(-2px);
+            & > *:not(:last-child){margin-bottom: .5rem;}
+        }
+        &--name
+        {
+            font-size: 2rem;
+            font-weight: 400;
 
-//             }
-//         }
+            @include respond(phone){font-size: 1.8rem;}
+        }   
+        &--from
+        {
+            font-size: 1.5rem;
+            font-weight: 400;
+            
+            @include respond(phone){font-size: 1.4rem;}
+        }
+        &--city
+        {
+            color: #68B5F7;
+        }
+        &--save
+        {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #68B5F7;
+            cursor: pointer;
 
-//     }
+            @include respond(phone){font-size: 1.4rem;}
+        }
+        &--price
+        {
+            color: $color-primary;
+            font-size: 1.9rem;
 
-//     .product__form
-//     {
-//         margin-left: auto;
-//     }
-//     &__line
-//     {
-//         margin: 3rem 0;
-//     }
-//     &__total
-//     {
-//         text-align: right;
-//         font-size: 2rem;
-//         &--price
-//         {
-//             color: $color-primary;
-//         }
+            @include respond(phone){font-size: 1.6rem;}
+        }
+        &--delete
+        {
+            border-radius: 50%;
+            border: 1px solid $color-black;
+            font-size: 2rem;
+            padding: 0 1rem;
+            cursor: pointer;
+            &-icon
+            {
+                transform: translateY(-2px);
 
-//         margin-bottom: 2rem;
-//     }
-//     &__offer
-//     {
-//         margin-bottom: 3rem;
-//         font-size: 2rem;
-//         letter-spacing: 1px;
-//     }
-// }
+            }
 
+            @include respond(phone){font-size: 1.6rem; padding: .5rem .6rem 0 .6rem;}
+        }
 
+    }
 
+    .product__quantity
+    {
+        margin-left: auto;
+        margin-bottom: 0;
 
+        @include respond(phone)
+        {
+            font-size: 1.4rem;
+            &>*{padding: .1rem .6rem !important;}
+        }
+    }
+    &__line
+    {
+        margin: 3rem 0;
+    }
+    &__total
+    {
+        text-align: right;
+        font-size: 2rem;
+        &--price
+        {
+            color: $color-primary;
+        }
 
-
-
-
-
-
-
-// // payment (L.H.S)
-// .checkout .rows .col-1-of-3,.checkout  .rows .col-2-of-3
-// {
-//     box-shadow: none ;
-// }
-// .payment
-// {
-//     &__form
-//     {
-//         &--radio-container
-//         {
-//             display: flex;
-//             align-items: center;
-//             margin-bottom: 2rem;
-//         }
-//         &--radio
-//         {
-//             margin-right: 2rem;
-//             width: 1.8rem;
-//             height: 1.8rem;
-//         }
-//         &--pic
-//         {
-//             width: 8rem;
-//             height: 4rem;
-//             &-visa
-//             {
-//                 width: 4rem;
-//                 height: 2rem;
-//             }
-//         }
-//         &--input-container
-//         {
-//             display: flex;
-//             align-items: center;
-//             margin-bottom: 2rem;
-//         }
-//         &--input-label
-//         {
-//             flex: 0 1 20%;
-//             font-size: 1.4rem;
-
-//             @include respond(tab-port)
-//             {
-//                 font-size: 1.3rem; 
-//             }
-//         }
-//         &--input
-//         {
-//             flex: 0 1 60%;
-//             padding: 1rem .5rem 1rem 1rem;
-//             letter-spacing: 1px;
-//             &:focus{outline: none;}
-
-//             &-ccv
-//             {
-//                 flex:  0 1 25%;
-//                 @include respond(tab-port)
-//                 {
-//                     flex: 0 1 60%;   
-//                 }
-//             }
-//         }
-//     }
-//     &__method--text
-//     {
-//         font-size: 1.8rem;
-//         margin-bottom: 2rem;
-//     }
-//     &__button
-//     {
-//         cursor: pointer;
-//         padding: .5rem 2.2rem;
-//     }
-// }
+        margin-bottom: 2rem;
+    }
+    &__offer
+    {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+}
 
 
-// // payment (R.H.S)
-// .payment
-// {
-//     &__right
-//     {
-//         &--table
-//         {
-//             width: 80%;
-//             border: 1px solid $color-grey-dark-2;
-//             margin-bottom: 2rem;
 
-//             display: flex;
-//             flex-direction: column;
-//             align-items: flex-start;
 
-//             @include respond(tab-port)
-//             {
-//                 width: 100%;   
-//             }
-//         }
-//         &--header
-//         {
-//             padding: 1rem 2rem;
-//             font-size: 1.6rem;
-//             background: $color-grey-light-2;
-//             width: 100%;
 
-//             @include respond(tab-port)
-//             {
-//                 font-size: 1.5rem;   
-//             }
-//         }   
-//         &--line
-//         {
-//             width: 100%;
-//             display: block;
-//         }
-//         &--item-container
-//         {
-//             width: 100%;
-//             padding: 0rem 2rem;
-//             margin: 1rem 0;
-//             font-size: 1.2rem;
-//             display: flex;
-//             justify-content: space-between;
-//             @include respond(tab-port)
-//             {
-//                 font-size: 1.1rem;   
-//             }
-//         }
-//         &--paragraph
-//         {
-//             font-size: 1.1rem;
-//             font-weight: 700;
-//             padding: 1rem 2rem;
-//         }
-//     }
-// }
+
+
+
+
+
+
+// payment 
+// (L.H.S)
+.payment__container
+{
+    display: flex;
+
+    @include respond(phone){flex-wrap: wrap;}
+}
+.payment
+{
+    &__left
+    {
+        flex: 0 1 65%;
+
+        @include respond(phone)
+        {
+            flex: 0 1 100%;
+            text-align: center;
+        }
+    }
+    &__right
+    {
+        flex: 0 1 30%;
+
+        @include respond(phone){flex: 0 1 100%;}
+    }
+    &__form
+    {
+        &--radio-container
+        {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            @include respond(phone){justify-content: center;}
+        }
+        &--radio
+        {
+            margin-right: 2rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            
+        }
+        &--pic
+        {
+            width: 8rem;
+            height: 4rem;
+            &-visa
+            {
+                width: 4rem;
+                height: 2rem;
+            }
+        }
+        &--input-container
+        {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        &--input-label
+        {
+            flex: 0 1 20%;
+            font-size: 1.4rem;
+
+            @include respond(tab-port)
+            {
+                font-size: 1.3rem; 
+            }
+        }
+        &--input
+        {
+            flex: 0 1 60%;
+            padding: 1rem .5rem 1rem 1rem;
+            letter-spacing: 1px;
+            &:focus{outline: none;}
+
+            &-ccv
+            {
+                flex:  0 1 25%;
+                @include respond(tab-port)
+                {
+                    flex: 0 1 60%;   
+                }
+            }
+        }
+    }
+    &__method--text
+    {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    &__button--container
+    {
+        width: 100%;
+
+        text-align: center;
+
+        @include respond(phone){margin-bottom: 3rem;}
+    }
+    &__button
+    {
+        cursor: pointer;
+        padding: .5rem 2.2rem;
+        padding: .5rem 4rem;
+        border-radius: 1rem;      
+        
+        
+    }
+}
+
+
+// payment (R.H.S)
+.payment
+{
+    &__right
+    {
+        &--table
+        {
+            width: 80%;
+            border: 1px solid $color-gray-dark-2;
+            margin-bottom: 2rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            @include respond(tab-port)
+            {
+                width: 100%;   
+            }
+        }
+        &--header
+        {
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            background: $color-gray-light-2;
+            width: 100%;
+
+            @include respond(tab-port)
+            {
+                font-size: 1.5rem;   
+            }
+        }   
+        &--line
+        {
+            width: 100%;
+            display: block;
+        }
+        &--item-container
+        {
+            width: 100%;
+            padding: 0rem 2rem;
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            @include respond(tab-port)
+            {
+                font-size: 1.1rem;   
+            }
+        }
+        &--paragraph
+        {
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 1rem 2rem;
+        }
+    }
+}

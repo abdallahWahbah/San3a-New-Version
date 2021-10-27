@@ -25,6 +25,8 @@
     }
     &.fixed + .header{margin-top: 15rem;}
     &.fixed + .section__product{margin-top: 15rem;}
+    &.fixed + .add{margin-top: 15rem !important;}
+    &.fixed + .checkout{margin-top: 15rem !important;}
 
     // LOGO
     &__logo
@@ -33,6 +35,7 @@
         margin-top: -1.6rem;
         margin-right: 2rem;
         padding-left: 7rem;
+        cursor: pointer;
 
         @include respond(tab-port)
         {
