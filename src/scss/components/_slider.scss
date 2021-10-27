@@ -1,3 +1,5 @@
+// I changed the top cat in the main page to be normal photos instead of the slider
+// i leave this page in case i needed it later
 .slider
 {
     overflow: hidden;
@@ -74,3 +76,20 @@
 
     @include respond(tab-port){padding: .3rem .5rem;}
 }
+
+// <div class="slider">
+//     <div class="slide slide--1">
+//         <div class="slide__container">
+//             <img src="./src/img/cat-3.jpg" alt="Pottery" class="slide__image">
+//             <h3 class="slide__cat">Pottery</h3>
+//         </div>
+//     </div>
+//     <div class="slide slide--2">
+//         <div class="slide__container">
+//             <img src="./src/img/cat-4.jpg" alt="Wicker" class="slide__image">
+//             <h3 class="slide__cat">Wicker</h3>
+//         </div>
+//     </div>
+        // <button class="btn__slider btn__slider--left">&larr;</button>
+        // <button class="btn__slider btn__slider--right">&rarr;</button>
+// </div>

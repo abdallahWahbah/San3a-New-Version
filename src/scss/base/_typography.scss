@@ -104,6 +104,7 @@ a
     padding: .5rem 2rem;
     font-size: 1.4rem;
     font-weight: 500;
+    cursor: pointer;
     transition: all .2s ease-in-out;
 
     @include respond(phone){font-size: 1.3rem;padding: .3rem 1.5rem;}
@@ -117,6 +118,18 @@ a
     {
         background: $color-primary-dark;
         border: 1px solid $color-primary-dark;
+    }
+}
+.btn--white
+{
+    color: $color-primary;
+    padding: 0 1.2rem;
+    border-radius: 1rem;
+
+    &:hover, &:active
+    {
+        background: $color-primary;
+        color: $color-white;
     }
 }
 .btn--left{
