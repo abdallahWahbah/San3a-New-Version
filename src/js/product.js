@@ -23,33 +23,42 @@ let increase = document.querySelector(".product__plus");
 let decrease = document.querySelector(".product__minus");
 let quantity = document.querySelector(".product__quantity--value")
 
-increase.addEventListener("click", () =>
+if(increase)
 {
-    currentQuantity++;
-    quantity.textContent = currentQuantity;
-});
+    increase.addEventListener("click", () =>
+    {
+        currentQuantity++;
+        quantity.textContent = currentQuantity;
+    });
+}
 
-decrease.addEventListener("click", () =>
+if(decrease)
 {
-    if(currentQuantity === 1) return;
-    currentQuantity--;
-    quantity.textContent = currentQuantity;
-});
+    decrease.addEventListener("click", () =>
+    {
+        if(currentQuantity === 1) return;
+        currentQuantity--;
+        quantity.textContent = currentQuantity;
+    });
+}
 
 // Choose size
 const sizes = document.querySelectorAll(".product__size");
-sizes.forEach(size =>
+if(sizes)
 {
-    size.addEventListener("click", () =>
+    sizes.forEach(size =>
     {
-        sizes.forEach(el => 
+        size.addEventListener("click", () =>
         {
-            el.style.background = "#fff";
-            el.style.color = "#999";
-        });
-        size.style.background = "#d94141";
-    }) ;
-});
+            sizes.forEach(el => 
+            {
+                el.style.background = "#fff";
+                el.style.color = "#999";
+            });
+            size.style.background = "#d94141";
+        }) ;
+    });
+}
 
 
 // --------------------------- Product page / Switch between decription and reviews / limit description--------------------------- 

@@ -27,6 +27,12 @@
     &.fixed + .section__product{margin-top: 15rem;}
     &.fixed + .add{margin-top: 15rem !important;}
     &.fixed + .checkout{margin-top: 15rem !important;}
+    &.fixed + .filter{margin-top: 15rem !important;}
+    &.fixed + .js--best__products--page{margin-top: 15rem !important;}
+    &.fixed + .tutorials{margin-top: 15rem !important;}
+    &.fixed + .video__show{margin-top: 15rem !important;}
+    &.fixed + .cart{margin-top: 15rem !important;}
+    
 
     // LOGO
     &__logo

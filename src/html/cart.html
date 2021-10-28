@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping cart</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../scss/main.scss">
+        
+    </head>
+    <body>
+        
+        <!-- layouts/navigation -->
+        <nav class="nav">
+            <div class="nav__container">
+                <img src="../img/logo.jpeg" alt="Navigation logo" class="nav__logo">
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Tutorials</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Categories</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+                </ul>
+
+                <div class="nav__icons">
+                    <ion-icon class="js--nav__list--icon" name="menu-outline"></ion-icon>
+                    <ion-icon class="js--nav__list--search" name="search"></ion-icon>
+                    <ion-icon name="person"></ion-icon>
+                    <ion-icon class="js--nav__list--cart" name="cart"></ion-icon>
+                </div>
+
+                <div class="nav__search">
+                    <input type="text" class="nav__input" placeholder="Search for a product ....">
+                    <ion-icon class="nav__search--icon" name="search-outline"></ion-icon>
+                </div>
+
+                <div class="nav__cart">
+                    <div class="nav__cart--item">
+                        <div class="nav__cart--image-container">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                        </div>
+                        <div class="nav__cart--item-details">
+                            <h3 class="nav__cart--item-title">Product 1</h3>
+                            <div class="nav__cart--item--price-details">
+                                <h5 class="nav__cart--item-price">200$</h5>
+                                <h5 class="nav__cart--item-offer">200$</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__cart--item">
+                        <div class="nav__cart--image-container">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                        </div>
+                        <div class="nav__cart--item-details">
+                            <h3 class="nav__cart--item-title">Product 1</h3>
+                            <div class="nav__cart--item--price-details">
+                                <h5 class="nav__cart--item-price">200$</h5>
+                                <h5 class="nav__cart--item-offer">200$</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__cart--item">
+                        <div class="nav__cart--image-container">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                        </div>
+                        <div class="nav__cart--item-details">
+                            <h3 class="nav__cart--item-title">Product 1</h3>
+                            <div class="nav__cart--item--price-details">
+                                <h5 class="nav__cart--item-price">200$</h5>
+                                <h5 class="nav__cart--item-offer">200$</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__cart--item">
+                        <div class="nav__cart--image-container">
+                            <img src="../img/made-1.jfif" alt="cart product 1" class="nav__cart--image">
+                        </div>
+                        <div class="nav__cart--item-details">
+                            <h3 class="nav__cart--item-title">Product 1</h3>
+                            <div class="nav__cart--item--price-details">
+                                <h5 class="nav__cart--item-price">200$</h5>
+                                <h5 class="nav__cart--item-offer">200$</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+        <!--pages/cart-->
+        <section class="cart cart__page--js">
+
+            <h2 class="heading__secondary">Shopping Cart</h2>
+
+            <div class="cart__item">
+                <img src="../img/made-9.jfif" alt="order photo" class="cart__item--photo">
+                <div class="cart__item--details">
+                    <div class="cart__item--details-item cart__item--details-item-1">
+                        <div class="cart__item--key">Bag</div>
+                        <p class="cart__item--value">
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing
+                            layoutsand visual mockups.
+                        </p>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">Price</div>
+                        <div class="cart__item--value">14$</div>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">Quantity</div>
+                        <div class="cart__item--value">1</div>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">Total</div>
+                        <div class="cart__item--value">25$</div>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">&nbsp;</div>
+                        <div class="cart__item--value">&cross;</div>
+                    </div>
+                </div>        
+            </div>
+            <hr>
+
+            <div class="cart__item">
+                <img src="../img/made-9.jfif" alt="order photo" class="cart__item--photo">
+                <div class="cart__item--details">
+                    <div class="cart__item--details-item cart__item--details-item-1">
+                        <div class="cart__item--key">Bag</div>
+                        <p class="cart__item--value">
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing
+                            layoutsand visual mockups.
+                        </p>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">Price</div>
+                        <div class="cart__item--value">14$</div>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">Quantity</div>
+                        <div class="cart__item--value">1</div>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">Total</div>
+                        <div class="cart__item--value">25$</div>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">&nbsp;</div>
+                        <div class="cart__item--value">&cross;</div>
+                    </div>
+                </div>        
+            </div>
+            <hr>
+
+            <div class="cart__item">
+                <img src="../img/made-9.jfif" alt="order photo" class="cart__item--photo">
+                <div class="cart__item--details">
+                    <div class="cart__item--details-item cart__item--details-item-1">
+                        <div class="cart__item--key">Bag</div>
+                        <p class="cart__item--value">
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing
+                            layoutsand visual mockups.
+                        </p>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">Price</div>
+                        <div class="cart__item--value">14$</div>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">Quantity</div>
+                        <div class="cart__item--value">1</div>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">Total</div>
+                        <div class="cart__item--value">25$</div>
+                    </div>
+                    <div class="cart__item--details-item">
+                        <div class="cart__item--key">&nbsp;</div>
+                        <div class="cart__item--value">&cross;</div>
+                    </div>
+                </div>        
+            </div>
+            <hr>
+
+            
+
+            <div class="cart__total">
+                <div class="cart__total__typo">
+                    <div class="cart__total__typo--text">Total price: </div>
+                    <div class="cart__total__typo--value">250$</div>
+                </div>
+
+                <div class="cart__total--buttons">
+                    <div class="btn btn--white">Update</div>
+                    <div class="btn btn--red cart__checkout--js">Checkout</div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- layouts/footer -->
+        <footer class="footer">
+            <div class="footer__left">
+                <div class="footer__image--container">
+                    <img src="../img/hand.svg" alt="" class="footer__image">
+                    <img src="../img/san3a.svg" alt="" class="footer__image">
+                </div>
+                <p class="footer__copy">&copy; October-November 2021 By <br>Abdallah Wahbah / San3a team</p>
+            </div>
+            <div class="footer__list--container">
+                <p class="footer__list--header">Our Servies</p>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Delivery information</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Shopping & return</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Special</a></li>
+                </ul>
+            </div>
+            <div class="footer__list--container">
+                <p class="footer__list--header">My Account</p>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">My order</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">My credit card</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">My Address</a></li>
+                </ul>
+            </div>
+            <div class="footer__list--container">
+                <p class="footer__list--header">Have a Question?</p>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Aldaqahlia, Mansoura university</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">+11111111111111111</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">0000000000@gmail.com</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="../js/noframework.waypoints.min.js"></script>
+
+        <script src="../js/navigation.js"></script>
+        <script src="../js/product.js"></script>
+        <!-- <script src="./src/js/slider.js"></script> -->
+    </body>
+</html>

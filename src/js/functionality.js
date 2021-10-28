@@ -53,6 +53,3 @@ if(paymentName)
 {
     paymentName.addEventListener("click",  showPayment);
 }
-
-
-

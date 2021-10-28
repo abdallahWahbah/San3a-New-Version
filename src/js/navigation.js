@@ -104,6 +104,66 @@ if(document.querySelector(".checkout"))
         offset: 20 
     });
 }
+// For filter page 
+if(document.querySelector(".filter"))
+{
+    var waypoint = new Waypoint({
+        element: document.querySelector(".filter"),
+        handler: function(direction) {
+            console.log("asdkajsdjkh");
+            document.querySelector(".nav").classList.add("fixed");
+        },
+        offset: 20 
+    });
+}
+// For best products page 
+if(document.querySelector(".js--best__products--page"))
+{
+    var waypoint = new Waypoint({
+        element: document.querySelector(".js--best__products--page"),
+        handler: function(direction) {
+            console.log("asdkajsdjkh");
+            document.querySelector(".nav").classList.add("fixed");
+        },
+        offset: 20 
+    });
+}
+// For tutorials page 
+if(document.querySelector(".tutorials"))
+{
+    var waypoint = new Waypoint({
+        element: document.querySelector(".tutorials"),
+        handler: function(direction) {
+            console.log("asdkajsdjkh");
+            document.querySelector(".nav").classList.add("fixed");
+        },
+        offset: 20 
+    });
+}
+// For video__show page 
+if(document.querySelector(".video__show"))
+{
+    var waypoint = new Waypoint({
+        element: document.querySelector(".video__show"),
+        handler: function(direction) {
+            console.log("asdkajsdjkh");
+            document.querySelector(".nav").classList.add("fixed");
+        },
+        offset: 20 
+    });
+}
+// For cart page 
+if(document.querySelector(".cart"))
+{
+    var waypoint = new Waypoint({
+        element: document.querySelector(".cart"),
+        handler: function(direction) {
+            console.log("asdkajsdjkh");
+            document.querySelector(".nav").classList.add("fixed");
+        },
+        offset: 20 
+    });
+}
 
 // --------------------------- Click on logo to go to the main page --------------------------- 
 if(document.querySelector(".nav__logo"))
