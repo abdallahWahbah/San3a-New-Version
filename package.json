@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel src/html/product.html",
+    "build": "parcel build src/html/product.html"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,9 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "faker": "^5.5.3"
   }
 }

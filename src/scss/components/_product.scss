@@ -36,11 +36,16 @@
         width: 27rem;
         height: 27rem;
         padding: 0;
+        cursor: pointer;
     }
     &__title
     {
         font-size: 1.8rem;
-        font-weight: 500;
+        font-weight: 500; // next 4 items to prevent the title from getting in a new row ... 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 27rem;
     }
     &__price--container
     {
@@ -91,4 +96,30 @@
         color: $color-white;
         padding: 0 1rem;
     }
+}
+
+.paggination
+{
+    margin-top: 4rem;
+
+    display: flex;
+    justify-content: center;
+
+    &>*:first-child{margin-right: 4rem;}
+    &__btn
+    {
+        background: #3c0000;
+        color: $color-white;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1.6rem;
+        font-weight: 500;
+        
+        display: flex;
+        align-items: center;
+
+        &>*:first-child{margin-right: 1rem;}
+    }
+    
 }
