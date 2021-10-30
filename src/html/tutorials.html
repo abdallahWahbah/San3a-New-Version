@@ -49,66 +49,22 @@
 
         <!-- pages/tutorials, base/typo -->
         <section class="tutorials">
-            <h2 class="heading__secondary">Video Gallery</h2>
+            <div class="tutorial__header__search__container">
+                <h2 class="heading__secondary">Video Gallery</h2>
+                <div class="tutorial__search">
+                    <input type="text" class="tutorial__input" placeholder="Search for a product ....">
+                    <ion-icon class="tutorial__search--icon" name="search-outline"></ion-icon>
+                </div>
+            </div>
 
             <div class="tutorials__container">
-                <div class="tutorial">
-                    <video class="tutorial__video" controls>
-                        <source src="https://media.istockphoto.com/videos/woman-making-pottery-on-the-wheel-video-id1277730925">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="tutorial__name">Pottery</div>
-                </div>
-                <div class="tutorial">
-                    <video class="tutorial__video" controls>
-                        <source src="https://media.istockphoto.com/videos/wicker-gray-plastic-surface-texture-video-id1312243990">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="tutorial__name">Wicker</div>
-                </div>
-                <div class="tutorial">
-                    <video class="tutorial__video" controls>
-                        <source src="https://media.istockphoto.com/videos/embroidering-woman-video-id1311941376">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="tutorial__name">Embroidery</div>
-                </div>
-                <div class="tutorial">
-                    <video class="tutorial__video" controls>
-                        <source src="https://media.istockphoto.com/videos/embroidering-woman-video-id1311942669">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="tutorial__name">Sculpture</div>
-                </div>
-                <div class="tutorial">
-                    <video class="tutorial__video" controls>
-                        <source src="https://media.istockphoto.com/videos/spreading-adhesive-on-huge-flor-tile-video-id1313654702">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="tutorial__name">Ceramic Paste</div>
-                </div>
-                <div class="tutorial">
-                    <video class="tutorial__video" controls>
-                        <source src="https://media.istockphoto.com/videos/woman-having-fun-and-enjoying-decorating-candles-as-a-hobby-video-id1256520897">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="tutorial__name">Candles</div>
-                </div>
-                <div class="tutorial">
-                    <video class="tutorial__video" controls>
-                        <source src="https://media.istockphoto.com/videos/midsection-of-caucasian-woman-painting-at-home-video-id1324152070">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="tutorial__name">String Art</div>
-                </div>
-                <div class="tutorial">
+                <!-- <div class="tutorial">
                     <video class="tutorial__video" controls>
                         <source src="https://media.istockphoto.com/videos/handicraft-master-checks-the-sewn-on-paws-for-a-plush-puppy-uses-pins-video-id1299417195">
                         Your browser does not support the video tag.
                     </video>
                     <div class="tutorial__name">Crochet</div>
-                </div>
-                
+                </div> -->
             </div>
         </section>
 
@@ -163,7 +119,7 @@
 
         <script src="../js/navigation.js"></script>
         <script src="../js/product.js"></script>
-        <!-- <script src="./src/js/slider.js"></script> -->
+        <script src="../js/controllers/tutorials.js"></script>
 
     </body>
 </html>

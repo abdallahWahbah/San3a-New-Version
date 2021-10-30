@@ -61,7 +61,6 @@ const getProducts = async () =>
                     categoryList.push(current);                    
                 }  
             })
-            // console.log(categoryList);
             if(categoryList.length !== 0)
             {
                 categoryList.forEach(cur =>
@@ -113,7 +112,7 @@ document.querySelector(".filter__click--button").addEventListener("click", () =>
 {
     let min = document.querySelector(".multi-range").dataset.lbound;
     let max = document.querySelector(".multi-range").dataset.ubound;
-    // console.log(min, max)
+    console.log(min, max)
 
     filteredPriceList.length=0;
 
@@ -142,7 +141,7 @@ document.querySelector(".filter__click--button").addEventListener("click", () =>
     {
         categoryList.forEach(current =>
         {
-            if(current.price >= min && current.price <= max)
+            if(current.price >= Number(min) && current.price <= Number(max))
             {
                 filteredPriceList.push(current);
             }
