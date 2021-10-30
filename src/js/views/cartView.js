@@ -11,7 +11,8 @@ let totalPrice=0;
 export let renderProduct = (product) =>
 {
     // const count = new URLSearchParams(location.href.split('?')[1]).get('quantity');
-    let count = Math.floor(Math.random()*6) + 1;
+    // let count = Math.floor(Math.random()*6) + 1;
+    let count = 1;
     // console.log(count)
 
     totalPrice += count * product.price;

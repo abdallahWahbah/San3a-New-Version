@@ -67,14 +67,14 @@
                     </div>
                     <div class="filter__container--details">
                         <ul class="filter__container--list filter__cat--page-js">
-                            <li class="filter__container--item"><a class="filter__container--link">Pottery</a></li>
+                            <!-- <li class="filter__container--item"><a class="filter__container--link">Pottery</a></li>
                             <li class="filter__container--item"><a class="filter__container--link">Wicker</a></li>
                             <li class="filter__container--item"><a class="filter__container--link">Embroidery</a></li>
                             <li class="filter__container--item"><a class="filter__container--link">sculpture</a></li>
                             <li class="filter__container--item"><a class="filter__container--link">ceramic paste</a></li>
                             <li class="filter__container--item"><a class="filter__container--link">candles</a></li>
                             <li class="filter__container--item"><a class="filter__container--link">String Art</a></li>
-                            <li class="filter__container--item"><a class="filter__container--link">Crochet</a></li>
+                            <li class="filter__container--item"><a class="filter__container--link">Crochet</a></li> -->
                         </ul>
                     </div>
 
@@ -110,17 +110,18 @@
                         <div class="filter__container--arrow">&vee;</div>
                     </div>
                     <div class="filter__container--details">
-                        <div class='multi-range' data-lbound='10' data-ubound='50'>
+                        <div class='multi-range' data-lbound='60' data-ubound='70'>
                             <hr />
                             <input type='range' 
-                                   min='10' max='45' step='5' value='10' 
+                                   min='50' max='500' step='5' value='60' 
                                    oninput='this.parentNode.dataset.lbound=this.value;'
                             />
                             <input type='range' 
-                                   min='15' max='50' step='5' value='50' 
+                                   min='55' max='505' step='5' value='70' 
                                    oninput='this.parentNode.dataset.ubound=this.value;'
                             />
                         </div>
+                        <div class="btn btn--red filter__click--button">filter</div>
                     </div>
 
                     <div class="filter__container--header">
@@ -173,7 +174,7 @@
                     </div>    
                 </div>
                 <div class="products">
-                    <div class="product">
+                    <!-- <div class="product">
                         <img src="../img/made-1.jfif" alt="Product 1" class="product__image">
                         <h3 class="product__title">Product name</h3>
                         <div class="product__price--container">
@@ -192,221 +193,7 @@
                             <ion-icon class="product__like" name="heart-outline"></ion-icon>
                         </div>
                         <div class="product__badge">5%</div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-2.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-3.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--old">200$</div>
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <div class="product__badge">New</div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-4.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--old">200$</div>
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <div class="product__badge">20%</div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-5.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--old">200$</div>
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon class="product__like" name="heart-outline"></ion-icon>
-                        </div>
-                        <div class="product__badge">5%</div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-6.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-7.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--old">200$</div>
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <div class="product__badge">New</div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-8.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--old">200$</div>
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <div class="product__badge">20%</div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-9.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--old">200$</div>
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon class="product__like" name="heart-outline"></ion-icon>
-                        </div>
-                        <div class="product__badge">5%</div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-10.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-11.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--old">200$</div>
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <div class="product__badge">New</div>
-                    </div>
-                    <div class="product">
-                        <img src="../img/made-12.jfif" alt="Product 1" class="product__image">
-                        <h3 class="product__title">Product name</h3>
-                        <div class="product__price--container">
-                            <div class="product__price--old">200$</div>
-                            <div class="product__price--new">190%</div>
-                        </div>
-                        <div class="product__stars">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half"></ion-icon>
-                        </div>
-                        <div class="product__cart__like">
-                            <div class="btn btn--white">Add to cart</div>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <div class="product__badge">20%</div>
-                    </div>
+                    </div> -->
                 </div>
                 
             </div>
@@ -463,6 +250,7 @@
         <script src="../js/noframework.waypoints.min.js"></script>
 
         <script src="../js/navigation.js"></script>
+        <script src="../js/controllers/filter.js"></script>
 
         <script>
             

@@ -53,13 +53,15 @@
     &__container
     {
         display: flex;
+        gap: 3rem;
 
         @include respond(phone){flex-wrap: wrap;}
         &--filters
         {
-            flex-basis: 90%;
+            flex-basis: 25%;
 
-            @include respond(tab-land){flex-basis: 100%;}
+            @include respond(tab-land){flex-basis: 30%;}
+            @include respond(phone){margin: 0 auto;}
         }
         &--header
         {
@@ -79,6 +81,7 @@
             font-size: 1.7rem;
             letter-spacing: 1px;
             font-weight: 600;
+            cursor: pointer;
         }
         &--arrow
         {
@@ -94,6 +97,7 @@
 
             &.active{clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);height: auto;}
         }
+        .products{margin-bottom: 4rem;}
         &--list
         {
             list-style: none;
@@ -175,7 +179,14 @@
         background: #555;
     }
 }
-
+.filter__click--button
+{
+    background: $color-primary;
+    color: $color-white;
+    font-size: 1.6rem;
+    padding: .5rem 4rem;
+    display: inline-block;
+}
 
 
 

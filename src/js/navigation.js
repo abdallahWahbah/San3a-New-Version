@@ -142,3 +142,14 @@ if(document.querySelector(".nav__logo"))
         location.href="./index.html"
     })
 }
+
+// search about product name and move to filter page with that name
+let search = document.querySelector(".nav__input");
+if(search)
+{
+    search.nextElementSibling.addEventListener("click", ()=>
+    {
+        // console.log(search.value);
+        location.href = `filter.html?input=${search.value}`
+    });
+}
