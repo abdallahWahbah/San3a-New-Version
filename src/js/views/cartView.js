@@ -11,8 +11,8 @@ let totalPrice=0;
 export let renderProduct = (product) =>
 {
     // const count = new URLSearchParams(location.href.split('?')[1]).get('quantity');
-    let count = Math.floor(Math.random()*6);
-    console.log(count)
+    let count = Math.floor(Math.random()*6) + 1;
+    // console.log(count)
 
     totalPrice += count * product.price;
 
@@ -37,7 +37,7 @@ export let renderProduct = (product) =>
             </div>
             <div class="cart__item--details-item">
                 <div class="cart__item--key">Total</div>
-                <div class="cart__item--value">${count * product.price}$</div>
+                <div class="cart__item--value cart__item--value-total">${count * product.price}$</div>
             </div>
             <div class="cart__item--details-item">
                 <div class="cart__item--key">&nbsp;</div>
@@ -87,17 +87,19 @@ export const renderCartTotalButtons = (oneProductTotalPrice) =>
             </div>
         </div>
     `;
+    document.querySelector(".cart__page--js .cart__total").innerHTML="";
     document.querySelector(".cart__page--js").insertAdjacentHTML("beforeend", markup);
 }
 
 export const deleteItem = id =>
 {
     const item = document.querySelector(`[data-itemid="${id}"]`);
-    item.parentElement.removeChild(item);
+    item.nextElementSibling.remove(); // "hr" element
+    item.remove();
 }
 
 export const deleteButtons = () =>
 {
     const item = document.querySelector(".cart__total");
-    item.parentElement.removeChild(item);
+    item.remove();
 }

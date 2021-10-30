@@ -60,15 +60,6 @@ export let renderRelatedTitle = () =>
     document.querySelector(".checkout__page--js").insertAdjacentHTML("beforeend", markup);
 };
 
-// export let renderRelatedProductsContainer = () =>
-// {
-//     const markup =
-//     `
-//         <div class="products"></div>
-//     `;
-//     document.querySelector(".checkout__offer").insertAdjacentHTML("afterend", markup);
-// }
-
 export let renderRelatedProduct = (product) =>
 {
     const markup = 

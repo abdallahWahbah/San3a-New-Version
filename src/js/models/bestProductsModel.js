@@ -1,6 +1,5 @@
 import axios from 'axios';
 import 'regenerator-runtime/runtime';
-// import token from '../controllers/login';
 
 export default class bestProductsModel
 {
@@ -18,7 +17,7 @@ export default class bestProductsModel
                     Authorization: `Token a5a5cb9c3c6b76aa405dc438a0a94426ff0e67c5`
                 }
             });
-            console.log(res);
+            // console.log(res);
             this.results = res.data;
         }
         catch(error)

@@ -1,8 +1,7 @@
 import * as checkoutView from '../views/checkoutView';
-import checkoutModel from '../models/ckeckoutModel';
-import * as bestProductsModel from '../models/bestProductsModel';
+import bestProductsModel from '../models/bestProductsModel';
 
-let relatedProducts;
+let relatedProducts=[];
 
 let products = JSON.parse(localStorage.getItem('cartProducts'));
 console.log(products);
@@ -29,7 +28,7 @@ document.querySelector(".products").addEventListener("click", e =>
 
 const getProducts = async (productData) =>
 {
-    let products = new checkoutModel();
+    let products = new bestProductsModel();
 
     let productResults = [];
     try
@@ -39,8 +38,6 @@ const getProducts = async (productData) =>
         // get the products from the model
         productResults = products.results;
 
-        // console.log(productResults);
-
         // get related products by sorting
         relatedProducts = sortProducts(productData, productResults);
         // console.log(relatedProducts);
@@ -49,8 +46,8 @@ const getProducts = async (productData) =>
         {
             // console.log(everyProduct);
             checkoutView.renderRelatedProduct(everyProduct);
-        })
-
+        });
+        return relatedProducts;
 
     }
     catch(error)
@@ -78,7 +75,6 @@ let sortProducts = (product, products) =>
         });
     });
 
-
     // removing duplication
     const filteredArr = finalProducts.reduce((acc, current) => {
     const x = acc.find(item => item.id === current.id);
@@ -90,7 +86,6 @@ let sortProducts = (product, products) =>
     }, []);
 
     filteredArr.sort(function(a, b){return a.id - b.id});
-    // console.log(filteredArr);
     return filteredArr;
 }
 
