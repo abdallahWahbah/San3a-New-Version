@@ -16,7 +16,8 @@ export default class Signup
     {
         try
         {
-            let res = await axios.post('https://cors-anywhere.herokuapp.com/http://20.52.51.184/api/rest-auth/registration/',
+            // let res = await axios.post('https://cors-anywhere.herokuapp.com/http://20.52.51.184/api/rest-auth/registration/',
+            let res = await axios.post('http://20.52.51.184/api/rest-auth/registration/',
             {
                 username: this.userName,
                 email: this.userEmail,
