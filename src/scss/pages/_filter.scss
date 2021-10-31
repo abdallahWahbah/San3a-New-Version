@@ -53,6 +53,7 @@
     &__container
     {
         display: flex;
+        align-items: flex-start;
         gap: 3rem;
 
         @include respond(phone){flex-wrap: wrap;}

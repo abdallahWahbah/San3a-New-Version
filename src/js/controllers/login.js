@@ -79,8 +79,15 @@ const controlLogin = async () =>
             localStorage.setItem("token", userToken);
             
 
-            // go to the home page
-            window.location.href="./index.html";
+            if(userToken !== "")
+            {
+                // go to the home page
+                // window.location.href="./index.html";
+                console.log('well done')
+                console.log(userToken)
+            }
+            else{console.log("error")}
+            
         }
         catch(error)
         {
@@ -98,4 +105,11 @@ let changeLabelColorBorder = (element, label, labelColor, placeholder, borderBot
     element.style.borderBottom  = borderBottom;
 }
 
-// export const token = userToken;
+// close the error message
+document.querySelector(".signup").addEventListener("click", (e)=>
+{
+    let element = e.target.closest(".signup__error--message-close");
+    if(!element) return;
+    console.log(element);
+    element.parentElement.parentElement.classList.remove("active");
+})

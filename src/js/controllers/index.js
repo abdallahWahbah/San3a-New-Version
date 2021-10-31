@@ -4,7 +4,7 @@ import productModel from '../models/productModel';
 import filterModel from '../models/filterMode';
 import * as indexView from '../views/indexView';
 
-
+console.log(localStorage.getItem("token"));
 // render categories to the main page
 const handleRenderingCategories = async ()=>
 {

@@ -11,7 +11,7 @@ const productId = new URLSearchParams(location.href.split('?')[1]).get('id');
 
 const controlProduct = async () =>
 {
-    let prod = new productModel(productId); 
+    let prod = new productModel(productId);
     // let prod = new productModel(1); 
 
     try

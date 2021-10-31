@@ -40,12 +40,27 @@ export default class Login
         }
         catch(error)
         {
-            console.log(error);
+            console.log(error.response.status);
+            console.log(error.response.data);
+            if(error.response.data["non_field_errors"]) this.renderErrorMessage("E-mail or password is wrong");
         }
     }
 
     getToken()
     {
         return this.userToken;
+    }
+    renderErrorMessage(message)
+    {
+        const marukup=
+        `
+        <div class="signup__error--message active">
+            <div class="signup__error--message-value">${message}</div>
+            <div class="signup__error--message-close-container">
+                <div class="signup__error--message-close">&cross;</div>
+            </div>
+        </div>
+        `;
+        document.querySelector(".signup").insertAdjacentHTML("beforeend", marukup);
     }
 }

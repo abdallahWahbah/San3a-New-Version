@@ -124,15 +124,21 @@ const controlSignUp = async () =>
 
     if(userName != "" && userEmail !="" &&  userPass2 !=="" && userPass1 === userPass2)
     {
-        console.log("object")
         let newUser = new Signup(userName, userEmail, userPass1, userPass2);
         try
         {
             // let res = postNewAccount(userName, userEmail, userPass1, userPass2);
             await newUser.postNewAccount();
 
-            location.href="./login.html";
-
+            if(newUser.status < 300)
+            { 
+                console.log('good work');                
+                newUser.renderSuccessMessage();                
+                
+                setTimeout(() => {
+                    location.href="./login.html";
+                }, 1500);
+            }
         }
         catch(error)
         {
@@ -150,3 +156,14 @@ let changeLabelColorBorder = (element, label, labelColor, placeholder, borderBot
     element.placeholder = placeholder;
     element.style.borderBottom  = borderBottom;
 }
+
+
+
+// close the error message
+document.querySelector(".signup").addEventListener("click", (e)=>
+{
+    let element = e.target.closest(".signup__error--message-close");
+    if(!element) return;
+    console.log(element);
+    element.parentElement.parentElement.classList.remove("active");
+})

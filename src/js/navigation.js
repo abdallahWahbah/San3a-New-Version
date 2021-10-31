@@ -142,6 +142,52 @@ if(document.querySelector(".nav__logo"))
         location.href="./index.html"
     })
 }
+// if(location.href.includes("__/__/"))
+// {
+//     console.log(location.href, typeof location.href);
+//     location.href.replace("__/__/", "");
+//     console.log(location.href);
+// }
+// if(document.querySelector(".nav__link--home"))
+// {
+//     document.querySelector(".nav__link--home").addEventListener("click", (e) =>
+//     {
+//         e.preventDefault();
+//         location.href="./index.html"
+//     })
+// }
+if(document.querySelector(".nav__link--tutorials"))
+{
+    document.querySelector(".nav__link--tutorials").addEventListener("click", (e) =>
+    {
+        e.preventDefault();
+        location.href="./tutorials.html"
+    })
+}
+if(document.querySelector(".nav__link--about"))
+{
+    document.querySelector(".nav__link--about").addEventListener("click", (e) =>
+    {
+        e.preventDefault();
+    })
+}
+if(document.querySelector(".nav__link--categories"))
+{
+    document.querySelector(".nav__link--categories").addEventListener("click", (e) =>
+    {
+        e.preventDefault();
+        location.href="./filter.html"
+    })
+}
+if(document.querySelector(".nav__link--products"))
+{
+    document.querySelector(".nav__link--products").addEventListener("click", (e) =>
+    {
+        e.preventDefault();
+        location.href="./bestProducts.html"
+    })
+}
+
 
 // search about product name and move to filter page with that name
 let search = document.querySelector(".nav__input");
