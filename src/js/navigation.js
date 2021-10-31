@@ -148,14 +148,14 @@ if(document.querySelector(".nav__logo"))
 //     location.href.replace("__/__/", "");
 //     console.log(location.href);
 // }
-// if(document.querySelector(".nav__link--home"))
-// {
-//     document.querySelector(".nav__link--home").addEventListener("click", (e) =>
-//     {
-//         e.preventDefault();
-//         location.href="./index.html"
-//     })
-// }
+if(document.querySelector(".nav__link--home"))
+{
+    document.querySelector(".nav__link--home").addEventListener("click", (e) =>
+    {
+        e.preventDefault();
+        location.href="./index.html"
+    })
+}
 if(document.querySelector(".nav__link--tutorials"))
 {
     document.querySelector(".nav__link--tutorials").addEventListener("click", (e) =>

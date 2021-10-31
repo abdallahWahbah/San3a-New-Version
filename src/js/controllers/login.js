@@ -82,7 +82,7 @@ const controlLogin = async () =>
             if(userToken !== "")
             {
                 // go to the home page
-                // window.location.href="./index.html";
+                window.location.href="./index.html";
                 console.log('well done')
                 console.log(userToken)
             }

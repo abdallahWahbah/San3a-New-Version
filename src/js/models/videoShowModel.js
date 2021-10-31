@@ -19,8 +19,8 @@ export default class videoShowModel
             {
                 headers:
                 {
-                    // Authorization: `Token ${token}`
-                    Authorization: `Token a5a5cb9c3c6b76aa405dc438a0a94426ff0e67c5`
+                    Authorization: `Token ${token}`
+                    // Authorization: `Token a5a5cb9c3c6b76aa405dc438a0a94426ff0e67c5`
                 }
             });
             this.results = res.data;

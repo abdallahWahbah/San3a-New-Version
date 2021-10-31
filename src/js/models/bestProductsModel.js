@@ -13,8 +13,8 @@ export default class bestProductsModel
             {
                 headers:
                 {
-                    // Authorization: `Token ${token}`, // abdallah token : a5a5cb9c3c6b76aa405dc438a0a94426ff0e67c5
-                    Authorization: `Token a5a5cb9c3c6b76aa405dc438a0a94426ff0e67c5`
+                    Authorization: `Token ${token}`, // abdallah token : a5a5cb9c3c6b76aa405dc438a0a94426ff0e67c5
+                    // Authorization: `Token a5a5cb9c3c6b76aa405dc438a0a94426ff0e67c5`
                 }
             });
             // console.log(res);
