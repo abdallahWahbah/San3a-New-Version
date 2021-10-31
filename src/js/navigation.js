@@ -187,6 +187,22 @@ if(document.querySelector(".nav__link--products"))
         location.href="./bestProducts.html"
     })
 }
+if(document.querySelector(".nav__link--profile"))
+{
+    document.querySelector(".nav__link--profile").addEventListener("click", (e) =>
+    {
+        e.preventDefault();
+        location.href="./profile.html"
+    })
+}
+if(document.querySelector(".nav__link--cart"))
+{
+    document.querySelector(".nav__link--cart").addEventListener("click", (e) =>
+    {
+        e.preventDefault();
+        location.href="./cart.html"
+    })
+}
 
 
 // search about product name and move to filter page with that name
